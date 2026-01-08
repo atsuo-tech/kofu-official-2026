@@ -1,0 +1,28 @@
+.happyLink {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	--hover-color: #0070f3;
+	position: relative;
+	transition: all 0.3s;
+}
+
+.happyLink[aria-current='page'] {
+	color: #fff !important;
+	background-color: var(--hover-color);
+}
+
+.happyLink::after {
+	content: '';
+	transition: all 0.3s;
+	display: block;
+	position: absolute;
+	inset: 0;
+	color: #fff;
+	border: 0px solid var(--hover-color);
+}
+
+.happyLink:hover::after {
+	border: solid var(--hover-color);
+	border-width: 4px;
+}

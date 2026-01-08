@@ -1,0 +1,17 @@
+:root {
+  scrollbar-gutter: stable;
+}
+
+:root,
+body {
+  margin: 0;
+  padding: 0;
+  --color-accent-blue-dark: #1565c0;
+  --color-accent-red-dark: #c62828;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-lato), var(--font-noto-sans-jp), sans-serif;
+}

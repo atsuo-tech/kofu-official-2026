@@ -1,0 +1,27 @@
+.enemy {
+	animation: blink 0.75s infinite alternate ease-in-out;
+	position: relative;
+	display: inline-block;
+	position: absolute;
+	margin: auto;
+	text-align: center;
+	inset: 0;
+	font-size: 4rem;
+}
+
+.message {
+	>a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 0.8;
+	}
+}
