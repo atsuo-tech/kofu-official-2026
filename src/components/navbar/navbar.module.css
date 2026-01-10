@@ -70,11 +70,17 @@ nav.header {
 			transform: translateY(-100%);
 			opacity: 0;
 			height: 100vh;
-			background: #fff;
+			background: var(--theme-common-background);
 
 			>a {
 				display: block;
 				padding: 1rem 0;
+			}
+
+			button.themeToggleButton {
+				width: 100%;
+				background: var(--theme-common-weak0-foreground);
+				color: var(--theme-common-background);
 			}
 		}
 
