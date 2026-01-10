@@ -1,4 +1,5 @@
 import Heading from "@/components/heading";
+import Link from "next/link";
 
 export default function AccessPage() {
 
@@ -17,6 +18,9 @@ export default function AccessPage() {
 				<li><a href="https://goo.gl/maps/h8tvqxunLLr" target="_blank">東京さくらトラム（都電荒川線）：早稲田駅から徒歩約10分</a></li>
 				<li><a href="https://goo.gl/PQAF2S" target="_blank"> 学02系統：高田馬場－馬場下町停留所 下車1分</a></li>
 			</ul>
+			<ins>
+				出典：<Link href="https://www.waseda-h.ed.jp/access/" target="_blank">早稲田中学校・高等学校公式サイト「アクセス」</Link>
+			</ins>
 		</main>
 	)
 
