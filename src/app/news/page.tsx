@@ -26,7 +26,7 @@ export default function NewsPage() {
 	return (
 		<main>
 			<Heading>お知らせ</Heading>
-			<Selector items={["今年度", "すべて"]} state={[filter, setFilter]} backgrounds={['#3fb312', '#1565c0']} />
+			<Selector items={["今年度", "すべて"]} state={[filter, setFilter]} backgrounds={['var(--theme-common-accent-1)', 'var(--theme-common-accent-2)']} />
 			<div className={styles.container}>
 				<div className={styles.newsContainer}>
 					{

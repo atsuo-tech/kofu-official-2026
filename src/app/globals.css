@@ -62,7 +62,7 @@ figure {
   max-width: 1000px;
   justify-self: center;
   background: var(--theme-common-background);
-  border: 1px solid var(--theme-common-weak2-foreground);
+  border: 1px solid var(--theme-common-weak0-foreground);
   padding: 1rem;
 
   >div {
@@ -79,8 +79,8 @@ figure {
       blockquote {
         margin-top: 1rem;
         padding-left: 1rem;
-        border-left: 2px solid var(--theme-common-weak2-foreground);
-        color: var(--theme-common-weak2-foreground);
+        border-left: 2px solid var(--theme-common-weak0-foreground);
+        color: var(--theme-common-weak0-foreground);
         position: relative;
         height: calc(100% - 1rem);
 

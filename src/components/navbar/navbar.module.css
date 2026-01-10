@@ -1,13 +1,14 @@
 nav.header {
 	position: sticky;
 	top: 0;
-	background-color: var(--theme-common-background);
+	background-color: var(--theme-navbar-background);
 	padding: 0 0 0 4rem;
-	box-shadow: 0 2px 4px var(--theme-common-box-shadow);
+	box-shadow: 0 2px 4px var(--theme-navbar-box-shadow);
 	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	color: var(--theme-navbar-foreground);
 
 	>div.title {
 		flex: 1;
@@ -27,6 +28,11 @@ nav.header {
 			font-weight: 500;
 			font-size: .9rem;
 			line-height: 5rem;
+			color: var(--theme-navbar-foreground);
+		}
+
+		>a[aria-current='page'] {
+			color: var(--theme-common-background);
 		}
 
 		button.themeToggleButton {
@@ -35,11 +41,64 @@ nav.header {
 			cursor: pointer;
 			line-height: 5rem;
 			padding: 0 2rem;
-			color: var(--theme-common-foreground);
+			color: var(--theme-navbar-foreground);
 
 			svg {
 				transform: translate(0, 25%);
 			}
+		}
+
+		div.themeSelector {
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			top: 3rem;
+			right: 0;
+			margin: 1rem;
+			width: 14rem;
+			background: var(--theme-common-background);
+			color: var(--theme-common-foreground);
+			box-shadow: 4px 4px 22px var(--theme-common-box-shadow);
+			border-radius: 8px;
+			overflow: hidden;
+			opacity: 0;
+			pointer-events: none;
+			transition: all 0.3s;
+
+			>button {
+				background: none;
+				border: none;
+				cursor: pointer;
+				padding: 0.5rem 1rem;
+				text-align: left;
+				width: 100%;
+				position: relative;
+				color: var(--theme-common-foreground);
+
+				&:hover {
+					background: var(--theme-common-weak3-foreground);
+				}
+
+				>span {
+					display: inline-block;
+					position: absolute;
+					margin: auto;
+					inset: 0;
+					height: max-content;
+					width: max-content;
+					font-size: 1.1rem;
+				}
+			}
+
+			>button.active {
+				background: var(--theme-common-foreground);
+				color: var(--theme-common-background);
+			}
+		}
+
+		div.themeSelector.active {
+			opacity: 1;
+			pointer-events: auto;
 		}
 	}
 
@@ -70,7 +129,7 @@ nav.header {
 			transform: translateY(-100%);
 			opacity: 0;
 			height: 100vh;
-			background: var(--theme-common-background);
+			background: var(--theme-navbar-background);
 
 			>a {
 				display: block;
@@ -81,6 +140,25 @@ nav.header {
 				width: 100%;
 				background: var(--theme-common-weak0-foreground);
 				color: var(--theme-common-background);
+			}
+
+			div.themeSelector {
+				display: flex;
+				position: absolute;
+				top: auto;
+				bottom: 4rem;
+				right: 0;
+				margin: 1rem;
+				border-radius: 8px;
+				overflow: hidden;
+				opacity: 0;
+				pointer-events: none;
+				transition: all 0.3s;
+			}
+
+			div.themeSelector.active {
+				opacity: 1;
+				pointer-events: auto;
 			}
 		}
 
@@ -103,7 +181,7 @@ nav.header {
 			>div {
 				display: block;
 				height: 3px;
-				background-color: var(--theme-common-foreground);
+				background-color: var(--theme-navbar-foreground);
 				margin: 4px 0;
 				border-radius: 2px;
 				z-index: 1100;

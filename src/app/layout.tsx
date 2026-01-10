@@ -7,8 +7,7 @@ import { cookies } from "next/headers";
 import { Theme } from "@/theme";
 
 import "./globals.css";
-import "@/theme/light";
-import "@/theme/dark";
+import "@/theme/all";
 
 import styles from './layout.module.css';
 import PageTransition from "@/components/page-transition";
@@ -33,7 +32,9 @@ export default async function RootLayout({
 
   const cookieStore = await cookies();
 
-  const initialTheme = cookieStore.get('theme')?.value === 'dark' ? Theme.DARK : Theme.LIGHT;
+  const cookieTheme = cookieStore.get('theme')?.value;
+
+  const initialTheme = cookieTheme ? (cookieTheme as Theme) : Theme.DARK;
 
   return (
     <html lang="ja" data-theme={initialTheme}>

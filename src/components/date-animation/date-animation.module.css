@@ -15,7 +15,7 @@ span.container {
 
 	>span:nth-child(1) {
 		font-size: 30pt;
-		color: var(--theme-common-weak2-foreground);
+		color: var(--theme-common-weak1-foreground);
 	}
 
 	>span:nth-child(n + 2) {
