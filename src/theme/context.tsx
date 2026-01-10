@@ -2,7 +2,6 @@
 
 import React, { useContext, useEffect, useMemo, useState } from "react";
 import { Theme } from ".";
-import { usePathname } from "next/navigation";
 
 const ThemeContext = React.createContext<{
 	theme: Theme;
