@@ -1,5 +1,4 @@
 import Heading from "@/components/heading";
-import SpScrollable from "@/components/sp-scrollable";
 import Image from "next/image";
 
 export default function AboutPage() {
