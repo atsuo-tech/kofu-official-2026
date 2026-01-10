@@ -1,5 +1,6 @@
 import Floormap from "@/components/floormap";
 import styles from './page.module.css';
+import DateAnimation from "@/components/date-animation";
 
 export default function Home() {
 
@@ -9,12 +10,7 @@ export default function Home() {
 				<div className={styles.title}>
 					<h1>興風祭 2026</h1>
 					<br />
-					<span>
-						<span>10</span>
-						<span>/3</span> <span>Sat.</span>
-						<span> ▶▶ </span>
-						<span>/4</span> <span>Sun.</span>
-					</span>
+					<DateAnimation />
 				</div>
 			</header>
 			<h2>概要</h2>

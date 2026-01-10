@@ -53,7 +53,7 @@ div.title {
 			font-size: 40pt;
 		}
 
-		>span {
+		>span.date {
 			font-size: 16pt;
 
 			>span {
