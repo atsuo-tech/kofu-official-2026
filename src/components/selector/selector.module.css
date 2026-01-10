@@ -1,14 +1,20 @@
 div.selector {
 	margin: 3rem;
 	display: flex;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
 	width: calc(100% - 6rem);
 	position: relative;
 
-	>div.indicator {
-		height: 100%;
+	div.indicator {
 		position: absolute;
-		z-index: 0;
+		height: 100%;
+		z-index: -1;
 		transition: all 0.3s ease-in-out;
+		top: 0;
+		left: 0;
+		background: var(--selection-indicator-background);
+		width: 100%;
 	}
 
 	>button {
@@ -21,6 +27,7 @@ div.selector {
 		cursor: pointer;
 		background: none;
 		color: var(--theme-common-foreground);
+		min-width: max-content;
 	}
 
 	>button.active {

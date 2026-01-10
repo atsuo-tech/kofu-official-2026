@@ -9,75 +9,6 @@ body.body {
 			height: 400px;
 			position: relative;
 		}
-
-		h1 {
-			font-size: 36pt;
-			margin-bottom: 1rem;
-		}
-
-		h2 {
-			font-size: 28pt;
-		}
-
-		h3 {
-			font-size: 22pt;
-		}
-
-		p,
-		li {
-			font-size: 13pt;
-			line-height: 1.6;
-		}
-
-		a {
-			text-decoration: none;
-			color: inherit;
-		}
-
-		a:hover {
-			text-decoration: underline;
-			color: var(--color-accent-blue-dark);
-		}
-
-		figure {
-			margin: 2rem 0;
-			width: calc(100% - 4rem);
-			max-width: 1000px;
-			justify-self: center;
-			background: var(--theme-common-background);
-			border: 1px solid var(--theme-common-weak2-foreground);
-			padding: 1rem;
-
-			>div {
-				display: grid;
-				grid-template-columns: 1fr 2fr;
-
-				>img {
-					width: 100%;
-					height: auto;
-					object-fit: contain;
-				}
-			}
-
-			blockquote {
-				margin-top: 1rem;
-				padding-left: 1rem;
-				border-left: 2px solid var(--theme-common-weak2-foreground);
-				color: var(--theme-common-weak2-foreground);
-				position: relative;
-
-				>cite {
-					display: block;
-					font-size: 0.9rem;
-					color: var(--theme-common-weak1-foreground);
-					margin-top: 0.5rem;
-					text-align: right;
-					position: absolute;
-					right: 1rem;
-					bottom: 1rem;
-				}
-			}
-		}
 	}
 
 	>footer {
@@ -131,31 +62,8 @@ body.body {
 
 @media (max-width: 768px) {
 	body.body {
-		>main {
-			margin: 1.5rem;
-
-			h2 {
-				font-size: 24pt;
-			}
-
-			h3 {
-				font-size: 20pt;
-			}
-
-			p,
-			li {
-				font-size: 12pt;
-			}
-
-			figure {
-				>div {
-					grid-template-columns: 1fr;
-
-					>img {
-						margin-bottom: 1rem;
-					}
-				}
-			}
+		main {
+			margin: 1rem;
 		}
 
 		>footer {

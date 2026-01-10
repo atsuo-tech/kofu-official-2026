@@ -1,6 +1,8 @@
 "use client";
+
 import { motion } from "framer-motion";
 import { useState } from "react";
+import styles from "./date-animation.module.css";
 
 export default function DateAnimation() {
 
@@ -10,6 +12,7 @@ export default function DateAnimation() {
 		<span
 			key={count}
 			onClick={() => setCount(count + 1)}
+			className={styles.container}
 		>
 			{
 				[

@@ -49,7 +49,7 @@ export default async function RootLayout({
           </PageTransition>
           <footer>
             <div className={styles.footerBackground}></div>
-            <h1>2026年度 興風祭</h1>
+            <h1><span>2026年度</span> <wbr /><span>興風祭</span></h1>
             <p>
               主催：早稲田中学校・高等学校 学芸大会実行委員会<br />
               このサイトの内容・画像はPCプログラミング部 Web 開発班若しくは各展示団体に帰属します。<br />

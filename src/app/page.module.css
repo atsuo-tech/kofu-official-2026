@@ -8,73 +8,15 @@ div.title {
 	>h1 {
 		display: inline-block;
 		color: var(--theme-heading-foreground) !important;
-		font-size: 70pt !important;
-	}
-
-	>span {
-		font-size: 28pt;
-
-		>span {
-			font-weight: 600;
-		}
-
-		>span:nth-child(3n + 1) {
-			font-size: 18pt;
-		}
-
-		>span:nth-child(3n + 2) {
-			font-size: 50pt;
-		}
-
-		>span:nth-child(1) {
-			font-size: 30pt;
-			color: var(--theme-common-weak2-foreground);
-		}
-
-		>span:nth-child(n + 2) {
-			color: var(--theme-common-accent-1);
-		}
-
-		>span:nth-child(4) {
-			color: var(--theme-common-accent-2);
-			font-size: 50pt;
-		}
-
-		>span:nth-child(n + 5) {
-			color: var(--theme-common-accent-3);
-		}
+		font-size: 70pt;
 	}
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	div.title {
 		>h1 {
 			font-size: 40pt;
-		}
-
-		>span.date {
-			font-size: 16pt;
-
-			>span {
-				font-weight: 600;
-			}
-
-			>span:nth-child(3n + 1) {
-				font-size: 12pt;
-			}
-
-			>span:nth-child(3n + 2) {
-				font-size: 30pt;
-			}
-
-			>span:nth-child(1) {
-				font-size: 20pt;
-			}
-
-			>span:nth-child(4) {
-				font-size: 30pt;
-			}
 		}
 	}
 }
