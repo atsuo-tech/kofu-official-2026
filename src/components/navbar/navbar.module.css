@@ -85,7 +85,7 @@ nav.header {
 		}
 
 		>div.links.active {
-			transform: translateY(3.1rem);
+			transform: translateY(3.6rem);
 			opacity: 1;
 		}
 
@@ -103,7 +103,7 @@ nav.header {
 			>div {
 				display: block;
 				height: 3px;
-				background-color: #333333;
+				background-color: var(--theme-common-foreground);
 				margin: 4px 0;
 				border-radius: 2px;
 				z-index: 1100;
