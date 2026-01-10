@@ -1,6 +1,6 @@
 body.body {
 
-	>main {
+	main {
 		margin: 3rem;
 		min-height: calc(100vh - 6rem);
 
@@ -13,12 +13,10 @@ body.body {
 		h1 {
 			font-size: 36pt;
 			margin-bottom: 1rem;
-			color: var(--color-accent-blue-dark);
 		}
 
 		h2 {
 			font-size: 28pt;
-			color: var(--color-accent-red-dark);
 		}
 
 		h3 {
@@ -46,8 +44,8 @@ body.body {
 			width: calc(100% - 4rem);
 			max-width: 1000px;
 			justify-self: center;
-			background: #fff;
-			border: 1px solid #ccc;
+			background: var(--theme-common-background);
+			border: 1px solid var(--theme-common-weak2-foreground);
 			padding: 1rem;
 
 			>div {
@@ -64,14 +62,14 @@ body.body {
 			blockquote {
 				margin-top: 1rem;
 				padding-left: 1rem;
-				border-left: 4px solid #ccc;
-				color: #333;
+				border-left: 2px solid var(--theme-common-weak2-foreground);
+				color: var(--theme-common-weak2-foreground);
 				position: relative;
 
 				>cite {
 					display: block;
 					font-size: 0.9rem;
-					color: #444;
+					color: var(--theme-common-weak1-foreground);
 					margin-top: 0.5rem;
 					text-align: right;
 					position: absolute;
@@ -87,8 +85,8 @@ body.body {
 		font-size: 1.2rem;
 		padding: 3rem;
 		background-image: repeating-linear-gradient(-45deg,
-				#f7f7f7,
-				#f7f7f7 5px,
+				var(--theme-common-weak3-foreground),
+				var(--theme-common-weak3-foreground) 5px,
 				transparent 5px,
 				transparent 10px);
 
@@ -103,8 +101,8 @@ body.body {
 			width: 100%;
 			height: 100%;
 			background-image: repeating-linear-gradient(45deg,
-					#f7f7f7,
-					#f7f7f7 5px,
+					var(--theme-common-weak3-foreground),
+					var(--theme-common-weak3-foreground) 5px,
 					transparent 5px,
 					transparent 10px);
 			z-index: -1;
@@ -121,7 +119,7 @@ body.body {
 					list-style: none;
 
 					>li>a {
-						color: #333;
+						color: var(--theme-link-foreground);
 						text-decoration: none;
 					}
 				}

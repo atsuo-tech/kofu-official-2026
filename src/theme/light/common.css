@@ -1,0 +1,16 @@
+html[data-theme='light'] {
+	--theme-common-background: #ffffff;
+	--theme-common-foreground: #000000;
+	--theme-common-box-shadow: rgba(0, 0, 0, 0.1);
+	--theme-common-accent-1: #1a73e8;
+	--theme-common-accent-2: #e37400;
+	--theme-common-accent-3: #d93025;
+	--theme-common-accent-4: #188038;
+	--theme-common-accent-5: #8e24aa;
+	--theme-common-weak1-foreground: #555555;
+	--theme-common-weak2-foreground: #777777;
+	--theme-common-weak3-foreground: #f5f5f5;
+	--theme-heading-foreground: #1a0dab;
+	--theme-heading-foreground: #202124;
+	--theme-link-foreground: #1a73e8;
+}

@@ -23,7 +23,7 @@ export default function Selector(
 				style={{
 					width: `${100 / items.length}%`,
 					transform: `translateX(${selection * 100}%)`,
-					background: backgrounds ? backgrounds[selection] : 'var(--color-accent-blue-dark)',
+					background: backgrounds ? backgrounds[selection] : 'var(--theme-common-background)',
 				}}
 			/>
 

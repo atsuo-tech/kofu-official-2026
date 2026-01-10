@@ -1,8 +1,10 @@
+import Heading from "@/components/heading";
+
 export default function AccessPage() {
 
 	return (
 		<main>
-			<h1>アクセス</h1>
+			<Heading>アクセス</Heading>
 			<p>
 				場所：早稲田中学校・高等学校<br />
 				住所：〒160-0023 東京都新宿区馬場下町 62<br />

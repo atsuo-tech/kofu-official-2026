@@ -20,7 +20,7 @@ export default function Floormap() {
 			<Selector
 				items={['俯瞰図', '中学棟', '高校棟', '興風館・理科棟']}
 				state={[building, setBuilding]}
-				backgrounds={['#e65100', '#1565c0', '#7b11a2', '#3fb312']}
+				backgrounds={['var(--theme-common-accent-1)', 'var(--theme-common-accent-2)', 'var(--theme-common-accent-3)', 'var(--theme-common-accent-4)']}
 			/>
 
 			<p>

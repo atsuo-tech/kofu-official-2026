@@ -1,0 +1,7 @@
+html[data-theme='dark'] {
+  --theme-page-root: #90caf9;
+  --theme-page-about: #f48fb1;
+  --theme-page-news: #ffe082;
+  --theme-page-exhibition: #a5d6a7;
+  --theme-page-access: #ffab91;
+}

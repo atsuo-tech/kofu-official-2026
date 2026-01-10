@@ -4,6 +4,7 @@ import { useState } from 'react';
 import styles from './page.module.css';
 import Selector from '@/components/selector';
 import Link from 'next/link';
+import Heading from '@/components/heading';
 
 const SAMPLE_NEWSES: { title: string; date: Date; content: string; }[] = [
 	{
@@ -24,7 +25,7 @@ export default function NewsPage() {
 
 	return (
 		<main>
-			<h1>お知らせ</h1>
+			<Heading>お知らせ</Heading>
 			<Selector items={["今年度", "すべて"]} state={[filter, setFilter]} backgrounds={['#3fb312', '#1565c0']} />
 			<div className={styles.container}>
 				<div className={styles.newsContainer}>

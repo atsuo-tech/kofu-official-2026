@@ -16,13 +16,14 @@ div.selector {
 		flex: 1;
 		padding: 1rem;
 		border: none;
-		background: #0000;
 		font-size: 1rem;
 		transition: all 0.3s ease;
 		cursor: pointer;
+		background: none;
+		color: var(--theme-common-foreground);
 	}
 
 	>button.active {
-		color: white;
+		color: var(--theme-common-background);
 	}
 }

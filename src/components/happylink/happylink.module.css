@@ -1,5 +1,5 @@
 .happyLink {
-	color: #fff;
+	color: var(--theme-common-foreground);
 	text-decoration: none;
 	cursor: pointer;
 	--hover-color: #0070f3;
@@ -8,7 +8,7 @@
 }
 
 .happyLink[aria-current='page'] {
-	color: #fff !important;
+	color: var(--theme-common-background);
 	background-color: var(--hover-color);
 }
 
@@ -18,7 +18,6 @@
 	display: block;
 	position: absolute;
 	inset: 0;
-	color: #fff;
 	border: 0px solid var(--hover-color);
 }
 

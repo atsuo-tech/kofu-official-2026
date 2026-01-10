@@ -1,10 +1,11 @@
+import Heading from "@/components/heading";
 import Image from "next/image";
 
 export default function AboutPage() {
 
 	return (
 		<main>
-			<h1>興風祭について</h1>
+			<Heading>興風祭について</Heading>
 			<p>
 				興風祭は、早稲田中学校・高等学校の学園祭です。<br />
 				毎年、多くの学生や地域の方々が参加し、様々なイベントや展示が行われます。<br />

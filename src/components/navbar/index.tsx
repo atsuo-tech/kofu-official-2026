@@ -4,19 +4,24 @@ import styles from './navbar.module.css';
 import { useState } from 'react';
 import HappyLink from '../happylink/page';
 import { usePathname } from 'next/navigation';
+import { useTheme } from '@/theme/context';
+import { Theme } from '@/theme';
+import { LightMode, DarkMode } from '@mui/icons-material';
 
 const NAV_LINKS: { name: string; href: string; hoverColor?: string }[] = [
-	{ name: 'ホーム', href: '/', hoverColor: '#1565c0' },
-	{ name: '興風祭について', href: '/about', hoverColor: '#d32f2f' },
-	{ name: 'お知らせ', href: '/news', hoverColor: '#fbc02d' },
-	{ name: '展示一覧', href: '/exhibition', hoverColor: '#388e3c' },
-	{ name: 'アクセス', href: '/access', hoverColor: '#f57c00' },
+	{ name: 'ホーム', href: '/' },
+	{ name: '興風祭について', href: '/about' },
+	{ name: 'お知らせ', href: '/news' },
+	{ name: '展示一覧', href: '/exhibition' },
+	{ name: 'アクセス', href: '/access' },
 ];
 
 export default function Navbar() {
 
 	const [humburgerOpen, setHamburgerOpen] = useState(false);
 	const pathname = usePathname();
+
+	const { theme, setTheme } = useTheme();
 
 	return (
 		<nav className={styles.header}>
@@ -34,6 +39,18 @@ export default function Navbar() {
 						{link.name}
 					</HappyLink>
 				))}
+				<div>
+					<button
+						onClick={() => {
+							setTheme(theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT);
+						}}
+						className={styles.themeToggleButton}
+					>
+						{
+							theme === Theme.LIGHT ? <DarkMode /> : <LightMode />
+						}
+					</button>
+				</div>
 			</div>
 			<div className={styles.hamburger + (humburgerOpen ? ` ${styles.active}` : '')} onClick={() => setHamburgerOpen(!humburgerOpen)}>
 				<div className={styles.line1}></div>

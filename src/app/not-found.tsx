@@ -1,7 +1,6 @@
 "use client";
 
 import RPGLike from "@/components/rpg-like";
-import Link from "next/link";
 import styles from './not-found.module.css';
 import { usePathname, useRouter } from "next/navigation";
 import { Fragment, useEffect, useRef, useState } from "react";

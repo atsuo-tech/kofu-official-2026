@@ -1,9 +1,9 @@
 nav.header {
 	position: sticky;
 	top: 0;
-	background-color: #ffffff;
-	padding: 0 4rem;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	background-color: var(--theme-common-background);
+	padding: 0 0 0 4rem;
+	box-shadow: 0 2px 4px var(--theme-common-box-shadow);
 	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
@@ -18,17 +18,28 @@ nav.header {
 		flex: 1.5;
 		display: flex;
 		justify-content: center;
-		margin: 0 -2rem;
 		height: 5rem;
 
 		>a {
 			text-align: center;
 			text-decoration: none;
 			flex: 1;
-			color: #333333;
 			font-weight: 500;
 			font-size: .9rem;
 			line-height: 5rem;
+		}
+
+		button.themeToggleButton {
+			background: none;
+			border: none;
+			cursor: pointer;
+			line-height: 5rem;
+			padding: 0 2rem;
+			color: var(--theme-common-foreground);
+
+			svg {
+				transform: translate(0, 25%);
+			}
 		}
 	}
 
@@ -55,7 +66,6 @@ nav.header {
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background-color: #ffffff;
 			transition: all 0.75s;
 			transform: translateY(-100%);
 			opacity: 0;
@@ -65,21 +75,6 @@ nav.header {
 			>a {
 				display: block;
 				padding: 1rem 0;
-			}
-
-			>a::before {
-				content: "";
-				display: absolute;
-				top: 0;
-				left: 0;
-				width: 0%;
-				height: 2px;
-				background-color: #ffffff;
-				transition: width 0.3s;
-			}
-
-			>a:hover::before {
-				width: 100%;
 			}
 		}
 
