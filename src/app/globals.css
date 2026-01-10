@@ -49,6 +49,13 @@ a:hover {
   text-decoration: underline;
 }
 
+a[target="_blank"]::after {
+  content: "↗";
+  font-family: var(--font-material-icons);
+  font-size: 0.8em;
+  margin-left: 0.2em;
+}
+
 figure {
   margin: 2rem 0;
   width: calc(100% - 4rem);
@@ -94,21 +101,21 @@ figure {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 40px;
+    font-size: 22pt;
     margin-bottom: 0.5rem;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 18pt;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 14pt;
   }
 
   p,
   li {
-    font-size: 16px;
+    font-size: 12pt;
   }
 
   figure {
