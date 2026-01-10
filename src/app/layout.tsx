@@ -53,7 +53,7 @@ export default async function RootLayout({
             <p>
               早稲田中学校・高等学校 学芸大会実行委員会<br />
               無断転載・複製を禁じます。<br />
-              <Link href="/copyright">著作権について</Link>
+              <Link href="/about/copyright">著作権について</Link>
             </p>
             <div className={styles.footerLinks}>
               <div>
@@ -78,10 +78,10 @@ export default async function RootLayout({
               <div>
                 <h2>外部リンク</h2>
                 <ul>
-                  <li><Link href="https://www.waseda-h.ed.jp">早稲田中学校・高等学校</Link></li>
-                  <li><Link href="https://x.com/waseda_kofufes">公式 X（旧 Twitter）</Link></li>
-                  <li><Link href="https://www.instagram.com/waseda_kofufes/">公式 Instagram</Link></li>
-                  <li><Link href="https://www.youtube.com/@早稲田中学校高等学校">公式 YouTube</Link></li>
+                  <li><Link href="https://www.waseda-h.ed.jp" target="_blank">早稲田中学校・高等学校</Link></li>
+                  <li><Link href="https://x.com/waseda_kofufes" target="_blank">公式 X（旧 Twitter）</Link></li>
+                  <li><Link href="https://www.instagram.com/waseda_kofufes/" target="_blank">公式 Instagram</Link></li>
+                  <li><Link href="https://www.youtube.com/@早稲田中学校高等学校" target="_blank">公式 YouTube</Link></li>
                 </ul>
               </div>
             </div>
