@@ -42,12 +42,11 @@ li {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--theme-link-foreground);
 }
 
 a:hover {
   text-decoration: underline;
-  color: var(--color-accent-blue-dark);
 }
 
 figure {

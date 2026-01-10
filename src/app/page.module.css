@@ -3,7 +3,6 @@ div.title {
 	margin: auto;
 	inset: 0;
 	line-height: 1;
-	color: #333;
 
 	>h1 {
 		display: inline-block;

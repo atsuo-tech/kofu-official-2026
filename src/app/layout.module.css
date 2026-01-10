@@ -73,6 +73,10 @@ body.body {
 				font-size: 22pt;
 			}
 
+			>p {
+				font-size: 10pt;
+			}
+
 			>div.footerLinks {
 				flex-direction: column;
 
