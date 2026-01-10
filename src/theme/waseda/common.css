@@ -1,0 +1,19 @@
+html[data-theme='waseda'] {
+	--theme-common-background: #ffffff;
+	--theme-common-foreground: #862633;
+	--theme-common-box-shadow: rgba(0, 0, 0, 0.3);
+	--theme-common-accent-1: #599134;
+	--theme-common-accent-2: #236794;
+	--theme-common-accent-3: #f33a68;
+	--theme-common-accent-4: #e0d143;
+	--theme-common-accent-5: #42eb7a;
+	--theme-common-weak0-foreground: #8f5a5a;
+	--theme-common-weak1-foreground: #816161;
+	--theme-common-weak2-foreground: #e2c5c5;
+	--theme-common-weak3-foreground: #f0e0e0;
+	--theme-heading-foreground: #000000;
+	--theme-link-foreground: #ce3838;
+	--theme-navbar-background: #6b1a2a;
+	--theme-navbar-foreground: #ffffff;
+	--theme-navbar-box-shadow: rgba(0, 0, 0, 0.4);
+}

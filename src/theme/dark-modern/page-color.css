@@ -1,0 +1,7 @@
+html[data-theme='dark-modern'] {
+	--theme-page-root: #6fa8ff;
+	--theme-page-about: #f28b86;
+	--theme-page-news: #f7b955;
+	--theme-page-exhibition: #66bb6a;
+	--theme-page-access: #bc78e6;
+}

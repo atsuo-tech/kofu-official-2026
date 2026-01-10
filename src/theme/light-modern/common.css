@@ -1,0 +1,19 @@
+html[data-theme='light-modern'] {
+	--theme-common-background: #f9f9fb;
+	--theme-common-foreground: #1f1f1f;
+	--theme-common-box-shadow: rgba(0, 0, 0, 0.15);
+	--theme-common-accent-1: #4f8ef7;
+	--theme-common-accent-2: #f5a623;
+	--theme-common-accent-3: #f06261;
+	--theme-common-accent-4: #43a047;
+	--theme-common-accent-5: #9c27b0;
+	--theme-common-weak0-foreground: #444444;
+	--theme-common-weak1-foreground: #666666;
+	--theme-common-weak2-foreground: #888888;
+	--theme-common-weak3-foreground: #f0f0f0;
+	--theme-heading-foreground: #2c3e50;
+	--theme-link-foreground: #4f8ef7;
+	--theme-navbar-background: #444444;
+	--theme-navbar-foreground: #f0f0f0;
+	--theme-navbar-box-shadow: rgba(0, 0, 0, 0.2);
+}
