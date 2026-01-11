@@ -45,6 +45,7 @@ export default function Navbar() {
 					<button
 						onClick={() => {
 							setThemeSelectorOpen(!themeSelectorOpen);
+							setHamburgerOpen(false);
 						}}
 						className={styles.themeToggleButton}
 					>
