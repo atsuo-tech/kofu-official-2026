@@ -1,15 +1,30 @@
 div.selector {
-	margin: 3rem;
 	display: flex;
-	flex-wrap: wrap;
 	flex-flow: row wrap;
-	width: calc(100% - 6rem);
 	position: relative;
+	border-radius: 6px;
+	margin: .2rem 0;
+	padding: .5rem 1rem;
+	background: var(--theme-common-weak3-foreground);
+
+	&.vertical {
+		flex-direction: column;
+
+		>button.selectorItem,
+		>button.selectorTitle {
+			flex: none;
+			width: 100%;
+		}
+	}
+
+	&:not(div.selectorGroup>div) {
+		margin: 2rem;
+	}
 
 	div.indicator {
 		position: absolute;
 		height: 100%;
-		z-index: -1;
+		z-index: 1;
 		transition: all 0.3s ease-in-out;
 		top: 0;
 		left: 0;
@@ -18,8 +33,9 @@ div.selector {
 		border-radius: 6px;
 	}
 
-	>button {
-		z-index: 1;
+	>button.selectorItem,
+	>button.selectorTitle {
+		z-index: 2;
 		flex: 1;
 		padding: 1rem;
 		border: none;
@@ -29,9 +45,28 @@ div.selector {
 		background: none;
 		color: var(--theme-common-foreground);
 		min-width: max-content;
+		position: relative;
+		border-radius: 6px;
+
+		&.active {
+			color: var(--theme-common-background);
+		}
 	}
 
-	>button.active {
-		color: var(--theme-common-background);
+	>button.selectorTitle {
+		cursor: default;
+		font-weight: bold;
+		flex: 100%;
+		padding: .5rem 1rem;
 	}
+}
+
+div.selectorGroup {
+	border-radius: 6px;
+	padding: .2rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0 0 24px var(--theme-common-box-shadow);
 }

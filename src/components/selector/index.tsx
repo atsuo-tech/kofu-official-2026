@@ -3,16 +3,21 @@
 import { CSSProperties, Dispatch, SetStateAction, useLayoutEffect, useRef } from "react";
 import styles from './selector.module.css';
 import { useResizeObserver } from "@/lib/resize-observer";
+import { COMMON_CONFIG } from "@/theme";
 
 export default function Selector(
 	{
+		title,
 		items,
 		state: [selection, setSelection],
 		backgrounds,
+		vertical = false,
 	}: {
+		title?: string,
 		items: string[],
 		state: [number, Dispatch<SetStateAction<number>>],
 		backgrounds?: string[],
+		vertical?: boolean,
 	}
 ) {
 
@@ -24,7 +29,7 @@ export default function Selector(
 
 		if (selector.current) {
 
-			const button = selector.current?.children[selection] as HTMLButtonElement;
+			const button = selector.current?.getElementsByClassName(styles.selectorItem)[selection] as HTMLButtonElement;
 
 			const indicator = selector.current?.getElementsByClassName(styles.indicator)[0] as HTMLDivElement;
 
@@ -41,16 +46,23 @@ export default function Selector(
 
 	return (
 		<div
-			className={styles.selector}
+			className={styles.selector + (vertical ? ` ${styles.vertical}` : '')}
 			ref={selector}
 		>
+
+			{
+				title &&
+				<button className={styles.selectorTitle}>
+					{title}
+				</button>
+			}
 
 			{
 				items.map((item, index) => (
 					<button
 						key={index}
 						onClick={() => setSelection(index)}
-						className={selection === index ? styles.active : ''}
+						className={selection === index ? `${styles.active} ${styles.selectorItem}` : styles.selectorItem}
 					>
 
 						{item}
@@ -61,11 +73,25 @@ export default function Selector(
 			<div
 				className={styles.indicator}
 				style={{
-					background: backgrounds ? backgrounds[selection] : 'var(--theme-common-background)',
+					background: backgrounds ? backgrounds[selection] : `var(--theme-common-accent-${(selection % COMMON_CONFIG.accentColorNumber) + 1})`,
 				} as CSSProperties}
 			></div>
 
 		</div>
 	)
 
+}
+
+export function SelectorGroup(
+	{
+		children,
+	}: {
+		children: React.ReactNode,
+	}
+) {
+	return (
+		<div className={styles.selectorGroup}>
+			{children}
+		</div>
+	)
 }

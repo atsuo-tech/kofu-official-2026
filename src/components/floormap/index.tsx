@@ -18,9 +18,8 @@ export default function Floormap() {
 		<div>
 
 			<Selector
-				items={['俯瞰図', '中学棟', '高校棟', '興風館・理科棟']}
+				items={Object.values(Building)}
 				state={[building, setBuilding]}
-				backgrounds={['var(--theme-common-accent-1)', 'var(--theme-common-accent-2)', 'var(--theme-common-accent-3)', 'var(--theme-common-accent-4)']}
 			/>
 
 			<p>

@@ -11,14 +11,14 @@ import { InvertColors } from '@mui/icons-material';
 const NAV_LINKS: { name: string; href: string; hoverColor?: string }[] = [
 	{ name: 'ホーム', href: '/' },
 	{ name: '興風祭について', href: '/about' },
+	{ name: '団体一覧', href: '/group' },
 	{ name: 'お知らせ', href: '/news' },
-	{ name: '展示一覧', href: '/exhibition' },
 	{ name: 'アクセス', href: '/access' },
 ];
 
 export default function Navbar() {
 
-	const [humburgerOpen, setHamburgerOpen] = useState(false);
+	const [hamburgerOpen, setHamburgerOpen] = useState(false);
 	const [themeSelectorOpen, setThemeSelectorOpen] = useState(false);
 
 	const pathname = usePathname();
@@ -28,7 +28,7 @@ export default function Navbar() {
 	return (
 		<nav className={styles.header}>
 			<div className={styles.title}>2026年度 興風祭</div>
-			<div className={styles.links + (humburgerOpen ? ` ${styles.active}` : '')}>
+			<div className={styles.links + (hamburgerOpen ? ` ${styles.active}` : '')}>
 				{NAV_LINKS.map((link) => (
 					<HappyLink
 						key={link.href}
@@ -71,7 +71,7 @@ export default function Navbar() {
 					</div>
 				</div>
 			</div>
-			<div className={styles.hamburger + (humburgerOpen ? ` ${styles.active}` : '')} onClick={() => setHamburgerOpen(!humburgerOpen)}>
+			<div className={styles.hamburger + (hamburgerOpen ? ` ${styles.active}` : '')} onClick={() => setHamburgerOpen(!hamburgerOpen)}>
 				<div className={styles.line1}></div>
 				<div className={styles.line2}></div>
 				<div className={styles.line3}></div>

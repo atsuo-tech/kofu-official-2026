@@ -32,3 +32,7 @@ export const THEME_NAMES: Record<Theme, string> = {
 export type ThemeConfig<T> = {
 	[key in Theme]: T
 };
+
+export const COMMON_CONFIG = {
+	accentColorNumber: 5,
+} as const;
