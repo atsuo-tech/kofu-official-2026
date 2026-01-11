@@ -14,7 +14,7 @@ html[data-theme='dark'] {
 	--theme-heading-foreground: #8ab4f8;
 	--theme-heading-foreground: #e8eaed;
 	--theme-link-foreground: #82b2ff;
-	--theme-navbar-background: #282828;
+	--theme-navbar-background: #282828d0;
 	--theme-navbar-foreground: #e0e0e0;
 	--theme-navbar-box-shadow: rgba(0, 0, 0, 0.7);
 }

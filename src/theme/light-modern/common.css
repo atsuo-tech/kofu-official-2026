@@ -13,7 +13,7 @@ html[data-theme='light-modern'] {
 	--theme-common-weak3-foreground: #f0f0f0;
 	--theme-heading-foreground: #2c3e50;
 	--theme-link-foreground: #4f8ef7;
-	--theme-navbar-background: #444444;
+	--theme-navbar-background: #222222e0;
 	--theme-navbar-foreground: #f0f0f0;
 	--theme-navbar-box-shadow: rgba(0, 0, 0, 0.2);
 }

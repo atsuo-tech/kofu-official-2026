@@ -14,7 +14,7 @@ html[data-theme='light'] {
 	--theme-heading-foreground: #1a0dab;
 	--theme-heading-foreground: #202124;
 	--theme-link-foreground: #1a73e8;
-	--theme-navbar-background: #f8f8f8;
+	--theme-navbar-background: #f8f9faf0;
 	--theme-navbar-foreground: #000000;
 	--theme-navbar-box-shadow: rgba(0, 0, 0, 0.1);
 }

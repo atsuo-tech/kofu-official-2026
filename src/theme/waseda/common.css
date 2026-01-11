@@ -13,7 +13,7 @@ html[data-theme='waseda'] {
 	--theme-common-weak3-foreground: #f0e0e0;
 	--theme-heading-foreground: #000000;
 	--theme-link-foreground: #ce3838;
-	--theme-navbar-background: #6b1a2a;
+	--theme-navbar-background: #6b1a2ae0;
 	--theme-navbar-foreground: #ffffff;
 	--theme-navbar-box-shadow: rgba(0, 0, 0, 0.4);
 }

@@ -13,7 +13,7 @@ html[data-theme='gray-scale'] {
   --theme-common-weak3-foreground: #eeeeee;
   --theme-heading-foreground: #222222;
   --theme-link-foreground: #555555;
-  --theme-navbar-background: #e0e0e0;
+  --theme-navbar-background: #e0e0e0f8;
   --theme-navbar-foreground: #1c1c1c;
   --theme-navbar-box-shadow: rgba(0, 0, 0, 0.15);
 }
