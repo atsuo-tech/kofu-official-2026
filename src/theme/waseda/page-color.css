@@ -1,7 +1,7 @@
 html[data-theme='waseda'] {
 	--theme-page-root: #ad3f3f;
-	--theme-page-about: #a145df;
-	--theme-page-news: #398cc7;
-	--theme-page-exhibition: #51a151;
-	--theme-page-access: #c9903a;
+	--theme-page-about: #ad3f3f;
+	--theme-page-news: #ad3f3f;
+	--theme-page-exhibition: #ad3f3f;
+	--theme-page-access: #ad3f3f;
 }
