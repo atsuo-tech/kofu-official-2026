@@ -57,7 +57,7 @@ export default function NotFoundPage() {
 				} else if (selectionRef.current == 1) {
 					router.push("/");
 				} else if (selectionRef.current == 2) {
-					router.push("/exhibition");
+					router.push("/group");
 				}
 			}
 		}

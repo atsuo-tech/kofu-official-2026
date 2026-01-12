@@ -63,17 +63,17 @@ export default async function RootLayout({
                   <li><Link href="/">ホーム</Link></li>
                   <li><Link href="/about">興風祭について</Link></li>
                   <li><Link href="/news">お知らせ</Link></li>
-                  <li><Link href="/exhibition">展示一覧</Link></li>
+                  <li><Link href="/group">団体一覧</Link></li>
                   <li><Link href="/access">アクセス</Link></li>
                 </ul>
               </div>
               <div>
-                <h2>展示</h2>
+                <h2>団体一覧</h2>
                 <ul>
-                  <li><Link href="/exhibition#birdseye">ステージ</Link></li>
-                  <li><Link href="/exhibition#junior">中学棟</Link></li>
-                  <li><Link href="/exhibition#senior">高校棟</Link></li>
-                  <li><Link scroll href="/exhibition#kofu">興風館・理科棟</Link></li>
+                  <li><Link href="/group#birdseye">ステージ</Link></li>
+                  <li><Link href="/group#junior">中学棟</Link></li>
+                  <li><Link href="/group#senior">高校棟</Link></li>
+                  <li><Link scroll href="/group#kofu">興風館・理科棟</Link></li>
                 </ul>
               </div>
               <div>

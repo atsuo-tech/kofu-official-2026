@@ -16,8 +16,8 @@ const PAGE_COLOR: PageColor = {
 		"news": {
 			color: "var(--theme-page-news)",
 		},
-		"exhibition": {
-			color: "var(--theme-page-exhibition)",
+		"group": {
+			color: "var(--theme-page-group)",
 		},
 		"access": {
 			color: "var(--theme-page-access)",

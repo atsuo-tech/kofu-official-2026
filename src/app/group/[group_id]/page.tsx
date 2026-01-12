@@ -2,10 +2,10 @@ export default async function NewsDetailPage(
 	{
 		params
 	}: {
-		params: Promise<{ exhibition_id: string }>
+		params: Promise<{ group_id: string }>
 	}
 ) {
 
-	const { exhibition_id: id } = await params;
+	const { group_id: id } = await params;
 
 }
