@@ -5,10 +5,11 @@ import { useState } from "react";
 
 enum MethodCategory {
 	OFFLINE = '会場',
-	MAGAZINE = '部誌・団体誌',
+	ONLINE = 'オンライン',
 };
 
 enum GroupCategory {
+	ALL = 'すべての団体',
 	CLUB = '部活動・同好会',
 	COMMITTEE = '学芸大会実行委員会',
 	VOLUNTEER = '有志団体',
@@ -42,8 +43,8 @@ export function GroupFilter() {
 					state={[methodCategory, setMethodCategory]}
 					backgrounds={
 						[
-							"var(--theme-common-weak0-foreground)",
-							"var(--theme-common-weak1-foreground)"
+							"var(--theme-common-weak1-foreground)",
+							"var(--theme-common-weak1-foreground)",
 						]
 					}
 				/>

@@ -64,7 +64,6 @@ export default function Selector(
 						onClick={() => setSelection(index)}
 						className={selection === index ? `${styles.active} ${styles.selectorItem}` : styles.selectorItem}
 					>
-
 						{item}
 					</button>
 				))
@@ -73,7 +72,11 @@ export default function Selector(
 			<div
 				className={styles.indicator}
 				style={{
-					background: backgrounds ? backgrounds[selection] : `var(--theme-common-accent-${(selection % COMMON_CONFIG.accentColorNumber) + 1})`,
+					background:
+						backgrounds
+							? backgrounds[selection]
+							|| `var(--theme-common-accent-${((selection - backgrounds.length) % COMMON_CONFIG.accentColorNumber) + 1})`
+							: `var(--theme-common-accent-${(selection % COMMON_CONFIG.accentColorNumber) + 1})`,
 				} as CSSProperties}
 			></div>
 
