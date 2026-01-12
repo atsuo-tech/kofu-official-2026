@@ -44,6 +44,13 @@ export default function Selector(
 
 	}, [selection, selector, rect?.width, rect?.height]);
 
+	useLayoutEffect(() => {
+
+		const indicator = selector.current?.getElementsByClassName(styles.indicator)[0] as HTMLDivElement;
+		indicator.getAnimations().forEach((animation) => animation.cancel());
+
+	}, [rect?.width, rect?.height]);
+
 	return (
 		<div
 			className={styles.selector + (vertical ? ` ${styles.vertical}` : '')}
